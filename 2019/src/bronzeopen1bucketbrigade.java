@@ -43,18 +43,17 @@ public class bronzeopen1bucketbrigade {
     	int ans=0;
     	ans=Math.abs(br-lr)+Math.abs(lc-bc)-1;
         if(rr==br && br==lr) {
-        	if(br<rr && lr>rr) {
-        		ans+=2;
-        	}
-        	if(lr<rr && br>rr) {
-        		ans+=2;
-        	}
-        }
-        if(rc==bc && bc==lc) {
         	if(bc<rc && lc>rc) {
         		ans+=2;
         	}
         	if(lc<rc && bc>rc) {
+        		ans+=2;
+        	}
+        } else if(rc==bc && bc==lc) {
+        	if(br<rr && lr>rr) {
+        		ans+=2;
+        	}
+        	if(lr<rr && br>rr) {
         		ans+=2;
         	}
         }
